@@ -1,454 +1,622 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Material Resume</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
-    </noscript>
-    <link href="css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/aos.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/main.css?ver=1.2.1" rel="stylesheet">
-    <noscript>
-      <style type="text/css">
-        [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
-        }
-      </style>
-    </noscript>
-  </head>
-  <body class="bg-light" id="top">
-    <header class="d-print-none">
-      <div class="container text-center text-lg-left">
-        <div class="pt-4 clearfix">
-          <h1 class="site-title mb-0">Chenyi Kuang</h1>
-          <div class="site-nav"> 
-            <nav role="navigation">
-              <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="#about" title="About"><span class="menu-title">About</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span class="menu-title">Education</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#research project" title="Research Project"><span class="menu-title">Research Project</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#publication" title="Publication"><span class="menu-title">Publication</span></a>
-                </li>
-                <!-- <li class="nav-item"><a class="nav-link" href="#portfolio" title="Portfolio"><span class="menu-title">Portfolio</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#references" title="References"><span class="menu-title">References</span></a>
-                </li> -->
-                <li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><span class="menu-title">Contact</span></a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="page-content">
-      <div class="container">
-<div class="resume-container">
-  <div class="shadow-1-strong bg-white my-5" id="intro">
-    <div class="bg-info text-white">
-      <div class="cover bg-image"><img src="images/background2.jpg"/>
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.1);backdrop-filter: blur(2px);">
-          <div class="text-center p-5">
-            <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/me2.jpeg" width="200" height="200"/></div>
-            <div class="header-bio mt-3">
-              <div data-aos="zoom-in" data-aos-delay="0">
-                <h2 class="h1">Chenyi Kuang</h2>
-                <p>PhD student, Rensselaer Polytechnic Institute</p>
-              </div>
-              <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
-                <nav role="navigation">
-                  <ul class="nav justify-content-center">
-                    <!-- <li class="nav-item"><a class="nav-link" href="https://twitter.com/templateflip" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/templateflip" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/templateflip" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="https://github.com/templateflip" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
-                    </li> -->
-                  </ul>
-                </nav>
-              </div>
-              <div class="d-print-none"><a class="btn btn-outline-light btn-lg shadow-sm mt-1 me-3" href="Curriculum_Vitae_Chenyi Kuang.pdf" data-aos="fade-right" data-aos-delay="700">Download CV</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chenyi Kuang</title>
+  <meta name="description" content="Chenyi Kuang - Computer Vision Researcher working on human behavior understanding, gaze estimation, 3D vision, and physics-informed learning." />
 
-  <div class="shadow-1-strong bg-white my-5 p-5" id="about">
-    <div class="about-section"> 
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="h2 fw-light mb-4">About Me</h2>
-          <p align="justify">Hello! I’m Chenyi Kuang. Currently I'm a PhD student in ECSE (Electrical, Computer and System Engineering) Department of Rensselaer Polytechnic Institute, under the supervision of <a href="https://sites.ecse.rpi.edu/~qji/">Prof.Qiang Ji</a>.  My research mainly focus on computer vision tasks in the area of <strong>human facial behavior analysis</strong> using the tools of deep learning models and 3D geometric models. More concretely, my research is targeting at reconstructing two facial motions: the non-rigid 3D facial motion in terms of facial action units (FAUs)  and the rigid 3D eyeball motion, for facial expression recognition and eye gaze tracking. </p>
-          <p> <strong> Research Area: Computer Vision, Deep Learning, 3D Reconstruction and Modeling. </strong></p> 
-        </div>
-       <!--  <div class="col-md-5 offset-lg-1">
-          <div class="row mt-2">
-            <h2 class="h2 fw-light mb-4">Research Area</h2>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"> Computer Vision</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div> -->
-        <div class="col-md-5 offset-lg-1">
-          <div class="row mt-2">
-            <h2 class="h2 fw-light mb-4">Bio</h2>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Email</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">kuangc2@rpi.edu</div>
-            </div>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Phone</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">+1 518-961-5132</div>
-            </div>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Address</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">RPI, Troy, New York, U.S.A</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- <div class="shadow-1-strong bg-white my-5 p-5" id="skills">
-    <div class="skills-section">
-      <h2 class="h2 fw-light mb-4">Research Area</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="mb-3"><span class="fw-bolder">Computer Vision</span>
-            <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="mb-3"><span class="fw-bolder">Deep Learning</span>
-            <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="mb-3"><span class="fw-bolder">3D Reconstruction and Modeling</span>
-            <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div> -->
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2933;
+      --muted: #667085;
+      --primary: #145da0;
+      --primary-dark: #0b3d6d;
+      --border: #e5e7eb;
+      --card-bg: #f8fafc;
+      --accent: #eaf4ff;
+      --max-width: 1080px;
+    }
 
-          <!-- <div class="mb-3"><span class="fw-bolder">Human Facial Behaviour Ana</span>
-            <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Advance</div>
-            </div> -->
-         <!--  </div>
-        </div>
-        <div class="col-md-6">
-          <div class="mb-3"><span class="fw-bolder">Adobe Photoshop</span>
-            <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Master</div>
-            </div>
-          </div>
-          <div class="mb-3"><span class="fw-bolder">Adobe Illustrator</span>
-            <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Expert</div>
-            </div>
-          </div>
-          <div class="mb-3"><span class="fw-bolder">Sketch</span>
-            <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Expert</div>
-            </div>
-          </div>
-          <div class="mb-3"><span class="fw-bolder">Adobe XD</span>
-            <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Beginner</div>
-            </div> -->
-          <!-- </div>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+    }
+
+    nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.9rem 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .nav-name {
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.95rem;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2.5rem 1.2rem 4rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 2rem;
+      align-items: center;
+      padding: 2.2rem 0 2.8rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #dbeafe, #f8fafc);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .hero h1 {
+      margin: 0 0 0.35rem;
+      font-size: 2.5rem;
+      line-height: 1.1;
+    }
+
+    .hero .subtitle {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      margin: 0 0 1rem;
+      max-width: 780px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 1.1rem;
+    }
+
+    .button {
+      display: inline-block;
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      padding: 0.45rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      background: #ffffff;
+    }
+
+    .button:hover {
+      background: var(--accent);
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2.5rem 0 0;
+    }
+
+    section h2 {
+      font-size: 1.65rem;
+      margin: 0 0 1rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid.three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.1rem;
+    }
+
+    .card h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      margin: 0.25rem 0;
+      color: var(--muted);
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.75rem;
+    }
+
+    .tag {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.25rem 0.55rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 1.2rem;
+      padding: 1.1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .timeline-item:last-child {
+      border-bottom: none;
+    }
+
+    .date {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+
+    .timeline-item h3 {
+      margin: 0;
+      font-size: 1.08rem;
+    }
+
+    .timeline-item .place {
+      color: var(--muted);
+      margin: 0.2rem 0 0.45rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin-top: 0.4rem;
+    }
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+
+    .publication {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .publication:last-child {
+      border-bottom: none;
+    }
+
+    .publication-title {
+      font-weight: 700;
+    }
+
+    .publication-meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 0.15rem;
+    }
+
+    .news {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .news li {
+      display: grid;
+      grid-template-columns: 95px 1fr;
+      gap: 0.8rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .news li:last-child {
+      border-bottom: none;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .photo {
+        width: 150px;
+        height: 150px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .grid.two,
+      .grid.three {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-item,
+      .news li {
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-name">Chenyi Kuang</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="photo">
+        Add your profile photo here<br />
+        e.g., assets/profile.jpg
+      </div>
+
+      <div>
+        <h1>Chenyi Kuang</h1>
+        <div class="subtitle">Computer Vision Researcher · 3D Vision · Human Behavior Understanding</div>
+
+        <p>
+          I am an Algorithm Engineer at SkyHive Network and a Research Collaborator with Honda Research Institute USA.
+          I received my Ph.D. in Electrical Engineering from Rensselaer Polytechnic Institute in 2024.
+        </p>
+
+        <p>
+          My research focuses on human behavior understanding from visual data, including gaze estimation,
+          human-object interaction recognition and anticipation, dynamic 3D face reconstruction, 3D eye modeling,
+          and physics-informed machine learning. I am especially interested in building vision systems that understand
+          human attention, action, and intent for assistive robotics, autonomous systems, and embodied AI applications.
+        </p>
+
+        <div class="contact-links">
+          <a class="button" href="mailto:kuangcy1998@gmail.com">Email</a>
+          <a class="button" href="https://kuangcy1998.github.io/">Website</a>
+          <a class="button" href="#" title="https://www.linkedin.com/in/chenyi-kuang-803636212/">LinkedIn</a>
+          <a class="button" href="#" title="https://scholar.google.com/citations?user=97ce_4YAAAAJ&hl=en">Google Scholar</a>
+          <a class="button" href="#" title="https://github.com/kuangcy1998">GitHub</a>
+          <a class="button" href="ChenyiKuang_Resume_CV_2026.pdf">CV</a>
         </div>
       </div>
-    </div>
-  </div> -->
-  
-  <div class="shadow-1-strong bg-white my-5 p-5" id="education">
-    <div class="education-section">
-      <h2 class="h2 fw-light mb-4">Education</h2>
-      <div class="timeline">
-        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">PhD in ECSE <span class="text-muted h6">from Rensselaer Polytechnic Institute</span>          </div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2019 - present</div>
-            <div>3D Human Facial Bahaviour Analysis in Computer Vision</div>
-            <div>Supervisor: <a href="https://sites.ecse.rpi.edu/~qji/">Prof.Qiang Ji</a></div>
-            <div><a href="https://sites.ecse.rpi.edu/~cvrl/">Intelligent Systems Lab</a></div>
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news">
+        <li><strong>2026</strong><span>Joined SkyHive Network as an Algorithm Engineer.</span></li>
+        <li><strong>2026</strong><span><em>Physics-informed Dynamic 3D Face Reconstruction</em> accepted to FG 2026 as an oral presentation.</span></li>
+        <li><strong>2025</strong><span>Started as a Research Collaborator with Honda Research Institute USA.</span></li>
+        <li><strong>2024</strong><span>Completed Ph.D. in Electrical Engineering at Rensselaer Polytechnic Institute.</span></li>
+        <li><strong>2024</strong><span>Worked as a Computer Vision Research Intern at Honda Research Institute USA.</span></li>
+        <li><strong>2024</strong><span><em>Interaction-aware Dynamic 3D Gaze Estimation in Videos</em> presented as an oral paper at the NeurIPS GMML Workshop.</span></li>
+      </ul>
+    </section>
+
+    <section id="research">
+      <h2>Research Interests</h2>
+      <div class="grid three">
+        <div class="card">
+          <h3>Human Attention Understanding</h3>
+          <p>Gaze estimation, saliency detection, visual attention modeling, and gaze anticipation.</p>
+        </div>
+        <div class="card">
+          <h3>Human Activity Understanding</h3>
+          <p>Human-object interaction recognition, action anticipation, and intent analysis.</p>
+        </div>
+        <div class="card">
+          <h3>3D Human Modeling</h3>
+          <p>Dynamic 3D face reconstruction, 3D eye modeling, expression analysis, and mesh-based learning.</p>
+        </div>
+        <div class="card">
+          <h3>Physics-informed Learning</h3>
+          <p>Combining biomechanical constraints, physical dynamics, and deep neural networks.</p>
+        </div>
+        <div class="card">
+          <h3>Vision for Robotics</h3>
+          <p>Human-aware perception systems for assistive robotics, aviation platforms, and autonomous systems.</p>
+        </div>
+        <div class="card">
+          <h3>Uncertainty-aware Modeling</h3>
+          <p>Probabilistic prediction, uncertainty estimation, and robust multimodal perception.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+
+      <div class="grid two">
+        <div class="card">
+          <h3>SAGE: Synchronized Action and Gaze Estimation</h3>
+          <p>
+            A unified framework for gaze detection, gaze anticipation, action recognition, and action anticipation.
+            The system models how human gaze supports action and intent reasoning in first-person and third-person videos.
+          </p>
+          <div class="tag-list">
+            <span class="tag">Gaze Estimation</span>
+            <span class="tag">Action Anticipation</span>
+            <span class="tag">HOI Recognition</span>
+            <span class="tag">Uncertainty</span>
           </div>
         </div>
-        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="200">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">Bachelor of Electrical Engineering <span class="text-muted h6">from University of Science and Technology of China</span>          </div>
+
+        <div class="card">
+          <h3>Exo-Cook Benchmark</h3>
+          <p>
+            A benchmark for third-person joint gaze-action understanding in cooking activities, including gaze labels,
+            action labels, object information, and baseline models for comprehensive human activity analysis.
+          </p>
+          <div class="tag-list">
+            <span class="tag">Benchmark</span>
+            <span class="tag">Ego-Exo Video</span>
+            <span class="tag">Gaze-Action Modeling</span>
           </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2015 - 2019</div>
-            <div> Department of Automation</div>
+        </div>
+
+        <div class="card">
+          <h3>Physics-informed Dynamic 3D Face Reconstruction</h3>
+          <p>
+            A physics-driven framework for dynamic 3D facial reconstruction that integrates biomechanical constraints
+            and facial motion dynamics for expression tracking in video sequences.
+          </p>
+          <div class="tag-list">
+            <span class="tag">3D Face</span>
+            <span class="tag">Physics-informed ML</span>
+            <span class="tag">Facial Dynamics</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Interaction-aware Dynamic 3D Gaze Estimation</h3>
+          <p>
+            A dynamic gaze estimation framework that models temporal gaze behavior and social interaction patterns
+            in videos, including multi-person attention and interaction-aware gaze dynamics.
+          </p>
+          <div class="tag-list">
+            <span class="tag">3D Gaze</span>
+            <span class="tag">Human Interaction</span>
+            <span class="tag">Temporal Modeling</span>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5" id="research project">
-    <div class="work-experience-section">
-      <h2 class="h2 fw-light mb-4">Research Project</h2>
-      <div class="timeline">
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">Human Facial  Expression  recognition & Analysis  through 3D  Face  Modeling: </div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div><p><li>learning personalized 3D face models from images/3D scans.</li></p>
-                 <p><li>accurate 3D face reconstruction for joint analysis of 3D head poses and facial expressions (for single/multiple subjects).</li> </p>
-                 <p><li>3D facial action  unit  recognition through learning  AU-aware  3D  faces.</li></p></div>
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">Facial Action Unit Dataset Labeling:</div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div>We segment facial  expression  videos  from  BP4D+ and upload  them  to  Amazon  AMT website for online  manual  
-                labeling. Then  we  collect worker  annotation  from  the website to  perform post-processing to  generate  frameby-frame data  labeling  and analyze the accuracy  of  the labels.</div>
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="400">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">3D  Eye Modeling  and Gaze  Tracking: </div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div><p><li>constructing   deformable  3D eye model  for   representing  the  anatomical  eyeball  structure  applicable   to 
-                        various  subjects,   including   eye   data  collection  from  a   wearable  device,   data  processing  for   camera 
-                        calibration,   calculation   of  3D  eyeball   parameters (pupil   center,   cornea  center,   eyeball   center  and   fovea  
-                        position),  and 3D  deformable  eyeball basis construction</li></p>
-                  <p><li>Model-based 3D eyeball reconstruction  & gaze  estimation  by  3DMM-Face-Eye fitting and regression.</li></p></div>
-          </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="timeline-item">
+        <div class="date">Feb. 2026 – Present</div>
+        <div>
+          <h3>Algorithm Engineer</h3>
+          <div class="place">SkyHive Network, LLC · Newark, DE</div>
+          <ul>
+            <li>Developing lightweight deep learning models for production user behavior prediction, including face recognition and user attention analysis.</li>
+            <li>Building systems that incorporate spatial-temporal pilot interaction data and pilot activity analysis into recommendation algorithms for an aviation platform.</li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="publication">
-    <div class="portfolio-section">
-      <h2 class="h2 fw-light mb-4">Publication</h2>
-      <div class="row g-0">
-        <div class="col-md-6"><a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136730001.pdf" target="_blank"><img class="img-fluid" src="images/flowchart-eccv.jpg" width="800" height="500"/></a></div>
-        <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-          <div class="m-4 mt-md-2">
-            <h4>AU-aware 3D Face Reconstruction through Personalized AU-specific Blendshape Learning</h4>
-            <p align="justify" class="text-muted">We present a
-                multi-stage learning framework that recovers AU-interpretable 3D facial
-                details by learning personalized AU-specific blendshapes from images.
-                Our model explicitly learns 3D expression basis by using AU labels and
-                generic AU relationship prior and then constrains the basis coefficients
-                such that they are semantically mapped to each AU. Our AU-aware 3D
-                reconstruction model generates accurate 3D expressions composed by semantically meaningful AU motion components. Furthermore, the output
-                of the model can be directly applied to generate 3D AU occurrence predictions, which have not been fully explored by prior 3D reconstruction
-                models. </p>
-            <p> More details can be found at: <a href="https://sites.ecse.rpi.edu/~cvrl/3DFace_Eye/3DFace.html">https://sites.ecse.rpi.edu/~cvrl/3DFace_Eye/3DFace.html</a></p>
-            <p align="justify"> [1] Kuang, Chenyi, Zijun Cui, Jeffrey O. Kephart, and Qiang Ji. "AU-Aware 3D Face Reconstruction through Personalized AU-Specific Blendshape Learning." In European Conference on Computer Vision, pp. 1-18. Springer, Cham, 2022. <a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136730001.pdf">paper</a> </p>
-          </div>
+
+      <div class="timeline-item">
+        <div class="date">Jan. 2025 – Present</div>
+        <div>
+          <h3>Research Collaborator</h3>
+          <div class="place">Honda Research Institute USA</div>
+          <ul>
+            <li>Collaborating on gaze-conditioned human-object interaction recognition and anticipation research.</li>
+            <li>Developed an uncertainty-aware model for joint gaze and action detection and anticipation.</li>
+            <li>Patent submission: <em>Gaze-aware Human Activity Detection and Anticipation</em>.</li>
+          </ul>
         </div>
       </div>
-      <div class="row g-0 portfolio-reverse">
-        <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-          <div class="m-4 mt-md-2 text-end">
-            <h4>Towards an accurate 3D deformable eye model for gaze estimation</h4>
-            <p align="justify" class="text-muted"> We present a method for constructing an anatomically accurate 3D deformable eye model from the IR images of eyes and
-              demonstrate its application to 3D gaze estimation. The 3D eye model
-              consists of a deformable basis capable of representing individual realworld eyeballs, corneas, irises and kappa angles. To validate the model’s
-              accuracy, we combine it with a 3D face model (without eyeball) and
-              perform image-based fitting to obtain eye basis coefficients The fitted
-              eyeball is then used to compute 3D gaze direction. Evaluation results on
-              multiple datasets show that the proposed method generalizes well across
-              datasets and is robust under various head poses.</p>
-              <p> More details can be found at: <a href="https://sites.ecse.rpi.edu/~cvrl/3DFace_Eye/3D_eye.html">https://sites.ecse.rpi.edu/~cvrl/3DFace_Eye/3D_eye.html</a></p>
-              <p align="justify"> Chenyi Kuang, Jeffrey Kephart, and Qiang Ji. Towards an accurate 3D deformable eye model for gaze estimation.
-        Towards a Complete Analysis of People: From Face and Body to Clothes (T-CAP Workshop at ICPR), 2022 <a href="images/3D_Eye_ChenyiKuang.pdf">paper</a> </p>
-          </div>
-        </div>
-        <div class="col-md-6"><a href="images/3D_Eye_ChenyiKuang.pdf" target="_blank"><img class="img-fluid" src="images/overview-2.jpg" width="800" height="500"/></a></div>
-      </div>
-      <!-- work 3 -->
-      </div>
-    </div>
-  <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="publication">
-    <div class="portfolio-section">
-      <div class="row g-0">
-      <!-- <div class="row g-0 portfolio-reverse"> -->
-        <div class="col-md-6"><a href="images/3D_Eye_ChenyiKuang.pdf" target="_blank"><img class="img-fluid" src="images/WACV-overview.png" width="800" height="500"/></a></div>
-        <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-          <div class="m-4 mt-md-2 text-end">
-            <h4>AU-Aware Dynamic 3D Face Reconstruction from Videos with Transformer</h4>
-            <p align="justify" class="text-muted"> We present a framework for dynamic 3D face reconstruction from monocular videos, which can accurately recover 3D facial geometrical representations for facial action unit (AU). Specifically, we design a coarse-to-fine framework, where the ”coarse” 3D face sequences are generated by a pre-trained static reconstruction model; and the ”refinement” is performed through a Transformer-based network. We design 1) a Temporal Module used for modeling temporal dependency of facial motion dynamics; 2) an Spatial Module for modeling AU spatial correlations from geometry-based AU tokens; 3) feature fusion for simultaneous dynamic facial AU recognition and 3D expression capturing. Experimental results show the superiority of our method in generating AU-aware 3D face reconstruction sequences both quantitatively and qual- itatively.</p>
-              <p align="justify"> Kuang, Chenyi, Jeffrey O. Kephart, and Qiang Ji. "AU-Aware Dynamic 3D Face Reconstruction From Videos With Transformer." Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision. 2024. <a href="images/WACV-0675.pdf">paper</a> </p>
-          </div>
+
+      <div class="timeline-item">
+        <div class="date">May 2024 – Aug. 2024</div>
+        <div>
+          <h3>Computer Vision Research Intern</h3>
+          <div class="place">Honda Research Institute USA · San Jose, CA</div>
+          <ul>
+            <li>Developed a unified system for joint human attention, action, and intent analysis.</li>
+            <li>Constructed a benchmark for comprehensive human activity analysis with human/object trajectories, action labels, and gaze labels.</li>
+          </ul>
         </div>
       </div>
-      <!-- work 4 -->
-      </div>
-    </div>
-  <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="publication">
-    <div class="portfolio-section">
-      <div class="row g-0">
-      <!-- <div class="row g-0 portfolio-reverse"> -->
-        <div class="col-md-6"><a href="images/CameraReady_GMML23.pdf" target="_blank"><img class="img-fluid" src="images/GMML23.png" width="800" height="500"/></a></div>
-        <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-          <div class="m-4 mt-md-2 text-end">
-            <h4>Interaction-aware Dynamic 3D Gaze Estimation in Videos</h4>
-            <p align="justify" class="text-muted"> We propose a novel
-                method for dynamic 3D gaze estimation in videos by utilizing the human interaction labels. Our model contains a temporal gaze estimator which is built upon Autoregressive
-                Transformer structures. Besides, our model learns the spatial relationship of gaze among
-                multiple subjects, by constructing a Human Interaction Graph from predicted gaze and
-                update the gaze feature with a structure-aware Transformer. Our model predict future
-                gaze conditioned on historical gaze and the gaze interactions in an autoregressive manner.
-                We propose a multi-state training algorithm to alternately update the Interaction module
-                and dynamic gaze estimation module, when training on a mixture of labeled and unlabeled
-                sequences. We show significant improvements in both within-domain gaze estimation accuracy and cross-domain generalization on the physically-unconstrained gaze estimation
-                benchmark.</p>
-              <!-- <p> More details can be found at: <a href="https://sites.ecse.rpi.edu/~cvrl/3DFace_Eye/3D_eye.html">https://sites.ecse.rpi.edu/~cvrl/3DFace_Eye/3D_eye.html</a></p> -->
-              <p align="justify"> Kuang, Chenyi, Jeffrey O. Kephart, and Qiang Ji. "Interaction-aware Dynamic 3D Gaze Estimation in Videos." In NeuRIPS 2023 Workshop on Gaze Meets ML. 2023. <a href="images/CameraReady_GMML23.pdf">paper</a> <a href="https://neurips.cc/virtual/2023/75498">slides</a></p>
-          </div>
-        <!-- <div class="col-md-6"><a href="images/3D_Eye_ChenyiKuang.pdf" target="_blank"><img class="img-fluid" src="images/GMML23.png" width="800" height="500"/></a></div> -->
+
+      <div class="timeline-item">
+        <div class="date">May 2022 – Aug. 2022</div>
+        <div>
+          <h3>Computer Vision Research Intern</h3>
+          <div class="place">IBM Almaden Lab · San Jose, CA</div>
+          <ul>
+            <li>Developed an uncertainty-guided data-free knowledge distillation algorithm for model fusion.</li>
+            <li>Applied the method to computer vision tasks including image classification and object detection.</li>
+          </ul>
         </div>
       </div>
-      <!-- work 5 -->
-      <div class="row g-0">
-        <div class="col-md-6"><!-- <a href="images/3D_Eye_ChenyiKuang.pdf" target="_blank"> --><img class="img-fluid" src="images/gaze.png" width="300" height="200"/></a></div>
-        <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-          <div class="m-4 mt-md-2">
-            <h4>Model-based 3D Gaze Estimation</h4>
-            <p class="text-muted">This work is under-review.</p>
-          </div>
+
+      <div class="timeline-item">
+        <div class="date">Sep. 2019 – May 2022</div>
+        <div>
+          <h3>Research Assistant</h3>
+          <div class="place">Rensselaer Polytechnic Institute · Troy, NY</div>
+          <ul>
+            <li>Developed geometry-aware facial expression recognition models using 3D Morphable Models.</li>
+            <li>Developed physics-driven 4D facial reconstruction for dynamic facial tracking and expression analysis.</li>
+            <li>Constructed deformable 3D eye models for accurate 3D gaze estimation under diverse head poses and illumination conditions.</li>
+            <li>Built multi-person gaze tracking systems for modeling group interaction dynamics and human attention patterns.</li>
+          </ul>
         </div>
       </div>
-      <div class="row g-0 portfolio-reverse">
-        <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-          <div class="m-4 mt-md-2 text-end">
-            <h4>Physics-informed 4D face reconstruction</h4>
-            <p class="text-muted">This work is undergoing.</p></div>
-          </div>
-          <div class="col-md-6"><!-- <a href="images/3D_Eye_ChenyiKuang.pdf" target="_blank"> --><img class="img-fluid" src="images/4D.png" width="400" height="300"/></a></div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="timeline-item">
+        <div class="date">Sep. 2019 – Dec. 2024</div>
+        <div>
+          <h3>Ph.D. in Electrical Engineering</h3>
+          <div class="place">Rensselaer Polytechnic Institute · Troy, NY, USA</div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- <div class="shadow-1-strong bg-white my-5 p-5" id="references">
-    <div class="reference-section">
-      <h2 class="h2 fw-light mb-4">References</h2>
-      <div class="row"> 
-        <div class="col-md-6">
-          <div class="d-flex mb-2">
-            <div class="avatar"><img src="images/reference-image-1.jpg" width="60" height="60"/></div>
-            <div class="header-bio m-3 mb-0">
-              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Aiyana</h3>
-              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">CEO / Web Design Company</p>
-            </div>
-          </div>
-          <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
-            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="d-flex mb-2">
-            <div class="avatar"><img src="images/reference-image-2.jpg" width="60" height="60"/></div>
-            <div class="header-bio m-3 mb-0">
-              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Alexander</h3>
-              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Front-end Developer / Web Design Company</p>
-            </div>
-          </div>
-          <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
-            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Walter is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</p>
-          </div>
+
+      <div class="timeline-item">
+        <div class="date">Sep. 2015 – Jun. 2019</div>
+        <div>
+          <h3>Bachelor in Electrical Engineering</h3>
+          <div class="place">University of Science and Technology of China · Hefei, China</div>
         </div>
       </div>
-    </div>
-  </div> -->
-  <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
-    <div class="contant-section">
-      <h2 class="h2 fw-light text mb-4">Contact</h2>
-      <div class="row mb-4">
-        <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
-          <div class="mt-1">
-            <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> kuangc2@rpi.edu</div>
-            <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> kuangcy1998@gmail.com</div>
-          </div>
-          <div class="mt-5 d-print-none"><form action="kuangcy1998@gmail.com"
-    method="POST">
-  <div class="form-outline mb-4">
-    <input type="text" id="name" class="form-control" required/>
-    <label class="form-label" for="name">Name</label>
-  </div>
-  <div class="form-outline mb-4">
-    <input type="email" id="email" class="form-control" required/>
-    <label class="form-label" for="email">Email address</label>
-  </div>
-  <div class="form-outline mb-4">
-    <textarea class="form-control" style="resize: none;" id="message" rows="4" required></textarea>
-    <label class="form-label" for="message">Message</label>
-  </div>
-  <button class="btn btn-info btn-block mb-4" type="submit">Send</button>
-</form>
-          </div>
-        </div>
-        <!-- <div class="col-md-7 d-print-none" data-aos-delay="100"><iframe src="images/concact.jpg" width="800" height="400" style="border:0;width:100%;" allowfullscreen="" loading="lazy"></iframe></div> -->
-        <div class="col-md-6"><!-- <a href="images/3D_Eye_ChenyiKuang.pdf" target="_blank"> --><img class="img-fluid" src="images/concact.jpg" width="400" height="300"/></a></div>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+
+      <div class="publication">
+        <div class="publication-title">Physics-informed Dynamic 3D Face Reconstruction</div>
+        <div class="publication-meta">Chenyi Kuang, Jeffrey O. Kephart, Qiang Ji · FG 2026 · Oral</div>
       </div>
-    </div>
-  </div>
-</div></div>
-    </div>
-    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
-      <div class="container">
-        <div class="my-3">
-          <div class="h4">Chenyi Kuang</div>
-          <!-- <div class="footer-nav">
-            <nav role="navigation">
-              <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="https://twitter.com/templateflip" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/templateflip" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/templateflip" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/templateflip" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
-                </li> -->
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <!-- <div class="text-small">
-          <div class="mb-1">&copy; Material Resume. All rights reserved.</div>
-          <div>Design - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
-        </div> -->
+
+      <div class="publication">
+        <div class="publication-title">Interaction-aware Dynamic 3D Gaze Estimation in Videos</div>
+        <div class="publication-meta">Chenyi Kuang, Jeffrey O. Kephart, Qiang Ji · NeurIPS 2024 GMML Workshop · Oral</div>
       </div>
-    </footer>
-    <script src="scripts/mdb.min.js?ver=1.2.1"></script>
-    <script src="scripts/aos.js?ver=1.2.1"></script>
-    <script src="scripts/main.js?ver=1.2.1"></script>
-  </body>
+
+      <div class="publication">
+        <div class="publication-title">AU-aware Dynamic 3D Face Reconstruction from Videos with Transformer</div>
+        <div class="publication-meta">Chenyi Kuang, Jeffrey O. Kephart, Qiang Ji · WACV 2024</div>
+      </div>
+
+      <div class="publication">
+        <div class="publication-title">AU-aware 3D Face Reconstruction Through Personalized AU-specific Blendshape Learning</div>
+        <div class="publication-meta">Chenyi Kuang, Zijun Cui, Jeffrey O. Kephart, Qiang Ji · ECCV 2022</div>
+      </div>
+
+      <div class="publication">
+        <div class="publication-title">Towards an Accurate 3D Deformable Eye Model for Gaze Estimation</div>
+        <div class="publication-meta">Chenyi Kuang, Jeffrey O. Kephart, Qiang Ji · ICPR 2022</div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Programming & Tools</h3>
+          <p>Python, MATLAB, PyCharm, Jupyter Notebook, Spyder</p>
+        </div>
+
+        <div class="card">
+          <h3>Machine Learning Libraries</h3>
+          <p>PyTorch, TensorFlow, Hugging Face Transformers, Scikit-learn, Matplotlib</p>
+        </div>
+
+        <div class="card">
+          <h3>3D Vision & Geometry</h3>
+          <p>PyTorch3D, gsplat, Trimesh, Open3D, 3D mesh processing, 3D Gaussian Splatting</p>
+        </div>
+
+        <div class="card">
+          <h3>Research Areas</h3>
+          <p>Gaze estimation, human-object interaction, action recognition, 3D face reconstruction, physics-informed learning</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:kuangcy1998@gmail.com">kuangcy1998@gmail.com</a><br />
+        Location: Philadelphia, PA, USA
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Chenyi Kuang. Last updated June 2026.
+  </footer>
+</body>
 </html>
